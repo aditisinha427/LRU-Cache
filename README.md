@@ -20,7 +20,44 @@ Includes a **CLI interface** for real-time interaction.
 - STL: `unordered_map`, pointers
 - Paradigm: Object-Oriented Programming (OOP)
 
-## 🚀 Usage
+## Usage
 ### Compile
 ```bash
 g++ -std=c++17 src/lru_cache.cpp -o lru_cache
+./lru_cache
+```
+## Example Run
+```bash
+Enter cache capacity: 2
+Enter commands (PUT key value / GET key / EXIT):
+PUT 1 100
+Inserted (1, 100)
+PUT 2 200
+Inserted (2, 200)
+GET 1
+Value: 100
+PUT 3 300
+Inserted (3, 300)
+GET 2
+Key not found
+EXIT
+Exiting...
+```
+## Project Structure
+```bash
+LRU-Cache/
+│── src/
+│   └── lru_cache.cpp   # Implementation + CLI
+│── README.md           # Documentation
+```
+## License
+- This project is open-source under the MIT License.
+
+
+
+
+
+
+
+
+
